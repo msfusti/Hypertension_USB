@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"53abf0b7c66e9e7fa1ccb8c1d3f6b417">
+		["MD5-CAM-1.0.1"] = <"6adde8c051b4d7d06b2d3031977cf689">
 		["build_uid"] = <"12e717ee-3c93-3f6a-bcc4-ddc50014c7a3">
 	>
 
@@ -115,6 +115,7 @@ definition
 													ELEMENT[at0019] occurrences matches {0..1} matches {    -- Frequency
 														value matches {
 															DV_QUANTITY matches {*}
+															DV_TIME matches {*}
 														}
 													}
 													ELEMENT[at0021] occurrences matches {0..1} matches {    -- Type
