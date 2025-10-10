@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2025-10-10">
 		["name"] = <"Sol Fustiñana">
 		["organisation"] = <"University Hospital Basel (USB)">
 		["email"] = <"msfusti@gmail.com">
-		["date"] = <"2025-10-10">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,12 +26,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"63d785e0667317ec790ba7bba98bf6f1">
+		["MD5-CAM-1.0.1"] = <"c45467b0780202c605cb4714189d9594">
 		["build_uid"] = <"12e717ee-3c93-3f6a-bcc4-ddc50014c7a3">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- lifestyle questionnaire
+	OBSERVATION[at0000] matches {    -- Lifestyle questionnaire
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {1..*; unordered} matches {
@@ -158,7 +158,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"lifestyle questionnaire">
+					text = <"Lifestyle questionnaire">
 					description = <"lifestyle questionnaire">
 				>
 				["at0001"] = <
