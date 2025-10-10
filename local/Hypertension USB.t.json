@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "2.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c079def5e1489a03927d3fdadefedb1f",
+      "MD5-CAM-1.0.1" : "37415accf5644ee4d309ae0696ef9f60",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -343,19 +343,10 @@
               "@type" : "C_ARCHETYPE_ROOT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..1",
-              "nodeId" : "at0003.2",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-DEMOGRAPHIC-CLUSTER.ovl-person_additional_data_iso-001.v0",
-              "referenceType" : "archetypeOverlay"
-            }, {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
               "nodeId" : "at0003.1",
               "attributes" : [ ],
               "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-DEMOGRAPHIC-CLUSTER.ovl-person_additional_data_br-001.v0",
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-person_demographics-001.v0",
               "referenceType" : "archetypeOverlay"
             } ]
           } ],
@@ -814,7 +805,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "587d27c3-3f8f-4edb-a085-2f20aff4fcbd",
+    "uid" : "74dfef25-6f3f-4bec-bbf1-db1b33c9810d",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -823,112 +814,15 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "2E4CD41132330A5BEC28342786B0748E"
-      },
-      "details" : {
-        "pt-br" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "pt-br"
-          },
-          "purpose" : "Representação de outros dados de uma pessoa além daqueles especificados pela ISO 22220.",
-          "keywords" : [ "serviço demográfico", "dados demográficos de uma pessoa" ],
-          "use" : "Usado em serviço demográficos para coletar os dados de uma pessoa.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "Representation of other person's data besides those specified in ISO 22220.",
-          "keywords" : [ "demographic service", "person's demographic data" ],
-          "use" : "Used in demographic service to collect a person's data.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_br.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-DEMOGRAPHIC-CLUSTER.ovl-person_additional_data_br-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "pt-br" : { },
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "70da5adf-6b57-42be-8015-46c005252791",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "pt-br"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "en"
-      },
-      "author" : {
-        "name" : "Sergio Miranda Freire",
-        "organisation" : "Universidade do Estado do Rio de Janeiro - UERJ",
-        "email" : "sergio@lampada.uerj.br"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "4f326c8e-4d3f-4649-9e06-5cfe1b2e98d8",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "F04358152899C2F3F18EE67E6253A027"
+        "PARENT:MD5-CAM-1.0.1" : "849640dacfc92b45f0e580779ff73d61"
       },
       "details" : { }
     },
-    "parentArchetypeId" : "openEHR-DEMOGRAPHIC-CLUSTER.person_additional_data_iso.v0",
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.person_demographics.v0",
     "differential" : true,
     "archetypeId" : {
       "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-DEMOGRAPHIC-CLUSTER.ovl-person_additional_data_iso-001.v0"
+      "value" : "openEHR-EHR-CLUSTER.ovl-person_demographics-001.v0"
     },
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
@@ -941,7 +835,6 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "pt-br" : { },
         "en" : { }
       },
       "termBindings" : { },
@@ -949,7 +842,7 @@
       "valueSets" : { }
     },
     "adlVersion" : "1.4",
-    "buildUid" : "49c3ed31-6935-426a-8b22-9c2bd5f1dfbd",
+    "buildUid" : "1114f21d-e64b-3dfb-a8ed-5d5de0a6fc4a",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
@@ -960,21 +853,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Sergio Miranda Freire",
-        "organisation" : "Universidade do Estado do Rio de Janeiro - UERJ",
-        "email" : "sergio@lampada.uerj.br"
-      },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
