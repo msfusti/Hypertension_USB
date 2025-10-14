@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d2e2adef3263f86e63d857a0e3a6375a">
+		["MD5-CAM-1.0.1"] = <"ac4247ff97cd7af065ea3262cd171414">
 		["build_uid"] = <"dfe5befc-ed31-3332-8e6f-38b7697f2649">
 	>
 
@@ -49,6 +49,21 @@ definition
 									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Sleep restful?
 										value matches {
 											DV_TEXT matches {*}
+										}
+									}
+									CLUSTER[at0007] occurrences matches {0..1} matches {    -- Sleep duration
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Situation
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Hours a night
+												value matches {
+													DV_QUANTITY matches {*}
+													DV_PROPORTION matches {*}
+												}
+											}
 										}
 									}
 								}
@@ -90,6 +105,18 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Sleep restful?">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Sleep duration">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Situation">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Hours a night">
 					description = <"">
 				>
 			>
