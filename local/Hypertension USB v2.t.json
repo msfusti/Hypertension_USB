@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "28.0.0",
+      "sem_ver" : "29.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d410f09eeaaaa43b51a50eb07186f6a2",
+      "MD5-CAM-1.0.1" : "4271ff055d324527a1aee03f0d7ebc97",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -17010,48 +17010,8 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_QUANTITY",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "property",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "openehr"
-                                  },
-                                  "constraint" : [ "128" ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ {
-                                "@type" : "C_ATTRIBUTE_TUPLE",
-                                "members" : [ {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "units",
-                                  "children" : [ ]
-                                }, {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "magnitude",
-                                  "children" : [ ]
-                                } ],
-                                "tuples" : [ {
-                                  "@type" : "C_PRIMITIVE_TUPLE",
-                                  "members" : [ {
-                                    "@type" : "C_STRING",
-                                    "rmTypeName" : "STRING",
-                                    "constraint" : [ "h" ]
-                                  }, {
-                                    "@type" : "C_REAL",
-                                    "rmTypeName" : "REAL",
-                                    "constraint" : [ {
-                                      "lowerIncluded" : false,
-                                      "upperIncluded" : false,
-                                      "lowerUnbounded" : true,
-                                      "upperUnbounded" : true
-                                    } ]
-                                  } ]
-                                } ]
-                              } ]
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
                             }, {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
@@ -17133,48 +17093,8 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_QUANTITY",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "property",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "openehr"
-                                  },
-                                  "constraint" : [ "128" ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ {
-                                "@type" : "C_ATTRIBUTE_TUPLE",
-                                "members" : [ {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "units",
-                                  "children" : [ ]
-                                }, {
-                                  "@type" : "C_ATTRIBUTE",
-                                  "rmAttributeName" : "magnitude",
-                                  "children" : [ ]
-                                } ],
-                                "tuples" : [ {
-                                  "@type" : "C_PRIMITIVE_TUPLE",
-                                  "members" : [ {
-                                    "@type" : "C_STRING",
-                                    "rmTypeName" : "STRING",
-                                    "constraint" : [ "h" ]
-                                  }, {
-                                    "@type" : "C_REAL",
-                                    "rmTypeName" : "REAL",
-                                    "constraint" : [ {
-                                      "lowerIncluded" : false,
-                                      "upperIncluded" : false,
-                                      "lowerUnbounded" : true,
-                                      "upperUnbounded" : true
-                                    } ]
-                                  } ]
-                                } ]
-                              } ]
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -19976,12 +19896,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Empfinden Sie ihren Schlaf als erholsam?",
-            "description" : ""
-          },
-          "at0008.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.1",
-            "text" : "Situation",
             "description" : ""
           },
           "at0007.1" : {
