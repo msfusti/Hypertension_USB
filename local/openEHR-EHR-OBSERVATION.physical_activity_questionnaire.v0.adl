@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a6406783c752a9acacd35adc600e37b0">
+		["MD5-CAM-1.0.1"] = <"7f3ade4a91632ee07fcc7dd08af83872">
 		["build_uid"] = <"fe6d5808-6764-3aab-a3e7-8029e1a8acf5">
 	>
 
@@ -64,7 +64,13 @@ definition
 													}
 												}
 											}
-											ELEMENT[at0011] occurrences matches {0..*} matches {*}    -- Measure
+											ELEMENT[at0012] occurrences matches {0..1} matches {    -- Measure
+												value matches {
+													DV_QUANTITY matches {*}
+													DV_INTERVAL<DV_QUANTITY> matches {*}
+													DV_PROPORTION matches {*}
+												}
+											}
 										}
 									}
 								}
@@ -124,7 +130,7 @@ ontology
 					text = <"No">
 					description = <"">
 				>
-				["at0011"] = <
+				["at0012"] = <
 					text = <"Measure">
 					description = <"">
 				>
