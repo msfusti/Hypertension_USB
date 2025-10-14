@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "22.0.0",
+      "sem_ver" : "23.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "9e89064047d944421cf8fa6a8c11cbdb",
+      "MD5-CAM-1.0.1" : "889160b25fb2995176d64990eac63807",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -17837,6 +17837,25 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0007.6",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "ready-made products",
+                                "@type" : "DV_TEXT"
+                              },
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0010.4",
                           "attributes" : [ {
@@ -17882,7 +17901,7 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_QUANTITY",
+                              "rmTypeName" : "DV_CODED_TEXT",
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
