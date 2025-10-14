@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"15b0ff484c0fa958b32e185e8e83e81e">
+		["MD5-CAM-1.0.1"] = <"18cea21db4b4936b35273f062508f337">
 		["build_uid"] = <"dfe5befc-ed31-3332-8e6f-38b7697f2649">
 	>
 
@@ -57,6 +57,8 @@ definition
 													at0012]    -- No
 												}
 											}
+											DV_QUANTITY matches {*}
+											DV_PROPORTION matches {*}
 										}
 									}
 									CLUSTER[at0007] occurrences matches {0..1} matches {    -- Sleep duration
