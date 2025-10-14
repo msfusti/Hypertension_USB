@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "24.1.0",
+      "sem_ver" : "24.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f0bcc98bed2cddd1d8c92b80eb189f0a",
+      "MD5-CAM-1.0.1" : "4239409682095ada2aad0cb754d5ba6d",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -17367,12 +17367,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.5",
             "description" : ""
-          },
-          "at0007.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.4",
-            "text" : "Activity name",
-            "description" : ""
           }
         }
       },
@@ -17902,7 +17896,33 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ ],
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "local_terms"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "local_terms",
+                                    "code" : "<2x/w",
+                                    "value" : "< 2 x pro Woche"
+                                  }, {
+                                    "terminologyId" : "local_terms",
+                                    "code" : "2-5x/w",
+                                    "value" : "2-5 x pro Woche"
+                                  }, {
+                                    "terminologyId" : "local_terms",
+                                    "code" : ">5x/w",
+                                    "value" : "> 5 x pro Woche"
+                                  } ]
+                                } ]
+                              } ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -19468,7 +19488,32 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "local_terms"
+                  },
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "local_terms" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "local_terms",
+                    "code" : "<2x/w",
+                    "value" : "< 2 x pro Woche"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : "2-5x/w",
+                    "value" : "2-5 x pro Woche"
+                  }, {
+                    "terminologyId" : "local_terms",
+                    "code" : ">5x/w",
+                    "value" : "> 5 x pro Woche"
+                  } ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
