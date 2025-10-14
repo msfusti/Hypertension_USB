@@ -1,0 +1,140 @@
+archetype (adl_version=1.4; uid=09db7a5b-5215-42f2-8656-b350b7e98069)
+	openEHR-EHR-OBSERVATION.medication_compliance_questionnaire.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2025-10-14">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d66b3a25c0b5fc7de258c596c4b25486">
+		["build_uid"] = <"eba69089-b447-32ea-8039-d871a36920cb">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- medication compliance questionnaire
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Screening purpose
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0005] occurrences matches {0..1} matches {    -- Description
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									CLUSTER[at0006] occurrences matches {0..1} matches {    -- Specific assessment
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0007] occurrences matches {0..1} matches {    -- Assessment
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Presence?
+												value matches {
+													DV_BOOLEAN matches {*}
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0009,    -- Yes
+															at0010,    -- No
+															at0011,    -- Unknown
+															at0012]    -- Unsure
+														}
+													}
+													DV_TEXT matches {*}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"medication compliance questionnaire">
+					description = <"medication compliance questionnaire">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Screening purpose">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Description">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Specific assessment">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Assessment">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Presence?">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Yes">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"No">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Unknown">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Unsure">
+					description = <"">
+				>
+			>
+		>
+	>
