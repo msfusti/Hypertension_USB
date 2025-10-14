@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a97d6bb2fcae2d52e4f7b3937358e40a">
+		["MD5-CAM-1.0.1"] = <"149a532fd3c4e722e655ec0d4db51b62">
 		["build_uid"] = <"8e0b011b-591c-38f4-9278-638aea1d2d8b">
 	>
 
@@ -53,7 +53,7 @@ definition
 											DV_BOOLEAN matches {*}
 										}
 									}
-									CLUSTER[at0008] occurrences matches {0..*} matches {    -- Specific question
+									CLUSTER[at0008] occurrences matches {0..*} matches {    -- Specific Assessment
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0009] occurrences matches {0..1} matches {    -- Question or use case
 												value matches {
@@ -118,7 +118,7 @@ ontology
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"Specific question">
+					text = <"Specific Assessment">
 					description = <"">
 				>
 				["at0009"] = <
