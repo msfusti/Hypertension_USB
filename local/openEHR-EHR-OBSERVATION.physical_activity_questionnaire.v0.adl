@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7f3ade4a91632ee07fcc7dd08af83872">
+		["MD5-CAM-1.0.1"] = <"fb14fda25061e51c2f0d2dbdad335610">
 		["build_uid"] = <"fe6d5808-6764-3aab-a3e7-8029e1a8acf5">
 	>
 
@@ -46,7 +46,7 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									CLUSTER[at0006] occurrences matches {0..1} matches {    -- Specific physical activity
+									CLUSTER[at0006] occurrences matches {0..*} matches {    -- Specific physical activity
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0007] matches {    -- Activity name
 												value matches {
