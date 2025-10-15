@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "31.0.0",
+      "sem_ver" : "31.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "decf0327f79581e63e021c6d9622fb7d",
+      "MD5-CAM-1.0.1" : "8cf15d09b4d264cec3a9958addec2efc",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -15796,7 +15796,7 @@
           "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.2",
-            "text" : "Since last visit",
+            "text" : "Haben Sie heute Morgen vergessen, Ihre Medikamente einzunehmen?",
             "description" : ""
           },
           "at0006.3" : {
