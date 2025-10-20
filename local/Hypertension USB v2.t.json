@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.1.0",
+      "sem_ver" : "33.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "173fe41b7967e22d4f148f9a34a805a4",
+      "MD5-CAM-1.0.1" : "07d06791bc67c804434f56ea47bf32ae",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -4202,8 +4202,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "248491001",
-                                    "value" : "Knieschwellung"
+                                    "code" : "102572006",
+                                    "value" : "Beinödem"
                                   } ]
                                 } ]
                               } ],
@@ -5246,8 +5246,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "276364001",
-                                    "value" : "Erektile Dysfunktion"
+                                    "code" : "72863001",
+                                    "value" : "Schnarchen"
                                   } ]
                                 } ]
                               } ],
@@ -5324,6 +5324,238 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0035.13",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0022.14",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.14",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "73430006",
+                                    "value" : "Schlafapnoe"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.14",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.45" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.14",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0035.14",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0022.15",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.15",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "occurrences" : "1..1",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "0..1",
+                                  "terminologyId" : {
+                                    "value" : "SNOMED-CT"
+                                  },
+                                  "constraint" : [ ],
+                                  "selectedTerminologies" : [ "SNOMED-CT" ],
+                                  "includedExternalTerminologyCodes" : [ {
+                                    "terminologyId" : "SNOMED-CT",
+                                    "code" : "276364001",
+                                    "value" : "Erektile Dysfunktion"
+                                  } ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0005.15",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.46" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.15",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0035.15",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
@@ -5522,6 +5754,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.13",
+            "text" : "Für Männer: Leiden Sie unter Erektionsproblemen? (2)",
+            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.13",
+            "text" : "Für Männer: Leiden Sie unter Erektionsproblemen? (3)",
+            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
           }
         },
         "fi" : {
@@ -5680,6 +5924,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Oire / tuntemus ryhmitys (14)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Oire / tuntemus ryhmitys (15)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "nb" : {
@@ -5838,6 +6094,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Spesifikt symptom/sykdomstegn (14)",
+            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Spesifikt symptom/sykdomstegn (15)",
+            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
           }
         },
         "de" : {
@@ -5849,20 +6117,20 @@
           },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (2)",
+            "code" : "at0022.2",
+            "text" : "Haben Sie manchmal ein Enge/Druckgefühl auf der Brust?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (3)",
+            "code" : "at0022.3",
+            "text" : "Müssen Sie nachts mehr als 1x Wasser lösen?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.4" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (4)",
+            "code" : "at0022.4",
+            "text" : "Leiden Sie unter geschwollenen Knöcheln/Beinen?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "ac0.11" : {
@@ -5873,56 +6141,56 @@
           },
           "at0022.5" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (5)",
+            "code" : "at0022.5",
+            "text" : "Leiden Sie unter Herzrasen/aussetzendem Herzschlag?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.6" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (6)",
+            "code" : "at0022.6",
+            "text" : "Leiden Sie unter Schwindel?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.7" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (7)",
+            "code" : "at0022.7",
+            "text" : "Sind Sie im letzten Jahr ohnmächtig geworden?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.8" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (8)",
+            "code" : "at0022.8",
+            "text" : "Haben Sie mehrmals im Monat Kopfschmerzen?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.9" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (9)",
+            "code" : "at0022.9",
+            "text" : "Haben Sie mehrmals im Monat Nasenbluten?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.10" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (10)",
+            "code" : "at0022.10",
+            "text" : "Leiden Sie unter verstärktem Schwitzen?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.11" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (11)",
+            "code" : "at0022.11",
+            "text" : "Haben Sie in letzter Zeit Gewicht zugenommen?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.12" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (12)",
+            "code" : "at0022.12",
+            "text" : "Fühlen sie sich im Alltag regelmässig müde und erschöpft?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.13" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spezifisches Symptom/Anzeichen (13)",
+            "code" : "at0022.13",
+            "text" : "Schnarchen Sie nachts?",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "ac0.22" : {
@@ -5996,6 +6264,24 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Leiden Sie unter Kurzatmigkeit/Atemnot?",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.14",
+            "text" : "Wurden bei Ihnen nächtliche Atemaussetzer beobachtet?",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.15",
+            "text" : "Für Männer: Leiden Sie unter Erektionsproblemen?",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           }
         },
         "it" : {
@@ -6154,6 +6440,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Sintomo/segno specifico (14)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Sintomo/segno specifico (15)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "sv" : {
@@ -6312,6 +6610,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specifika symptom/tecken (14)",
+            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specifika symptom/tecken (15)",
+            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
           }
         },
         "fr" : {
@@ -6470,6 +6780,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Symptôme/signe spécifique (14)",
+            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Symptôme/signe spécifique (15)",
+            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
           }
         },
         "zh-cn" : {
@@ -6628,6 +6950,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "具体症状/体征 (14)",
+            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "具体症状/体征 (15)",
+            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
           }
         },
         "ca" : {
@@ -6786,6 +7120,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Símptoma/signe específic (14)",
+            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Símptoma/signe específic (15)",
+            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
           }
         },
         "es" : {
@@ -6944,6 +7290,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
+          },
+          "at0022.14" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Síntoma/signo específico (14)",
+            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
+          },
+          "at0022.15" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Síntoma/signo específico (15)",
+            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
           }
         }
       },
@@ -7168,6 +7526,16 @@
         "ac0.44" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.44",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
           "members" : [ "at0023", "at0024" ]
         }
       }
