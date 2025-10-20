@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "33.0.0",
+      "sem_ver" : "34.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "07d06791bc67c804434f56ea47bf32ae",
+      "MD5-CAM-1.0.1" : "7e6e24ae8eaeb30e57e273cddcda5006",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -370,19 +370,6 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -426,8 +413,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "de" : { }
+        "en" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -445,17 +431,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "11fd24e1-94a5-4c2f-98b7-6987e2386bac",
@@ -906,19 +882,6 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -1009,14 +972,6 @@
             "code" : "ac0.1",
             "description" : ""
           }
-        },
-        "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          }
         }
       },
       "termBindings" : { },
@@ -1041,17 +996,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "8c16421b-aa53-491f-9953-043ad0cb8538",
@@ -2534,75 +2479,6 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0004.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_QUANTITY",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "property",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "openehr"
-                              },
-                              "constraint" : [ "122" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ {
-                            "@type" : "C_ATTRIBUTE_TUPLE",
-                            "members" : [ {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
-                              "children" : [ ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
-                              "children" : [ ]
-                            } ],
-                            "tuples" : [ {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "upper" : 1000.0,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
-                                } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "cm" ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "upper" : 250.0,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false
-                                } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "[in_i]" ]
-                              } ]
-                            } ]
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0018.1",
                       "attributes" : [ ],
@@ -2766,14 +2642,7 @@
       "termDefinitions" : {
         "nl" : { },
         "en" : { },
-        "de" : {
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Grösse",
-            "description" : "Die Länge des Körpers vom Scheitel bis zur Fußsohle."
-          }
-        },
+        "de" : { },
         "pt-br" : { },
         "fa" : { },
         "ar-sy" : { },
@@ -2788,11 +2657,7 @@
         "es-co" : { },
         "es" : { }
       },
-      "termBindings" : {
-        "LOINC" : {
-          "at0004.1" : "term:LOINC::8302-2"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -3847,7 +3712,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "267036007",
-                                    "value" : "Dyspnoe"
+                                    "value" : "Dyspnea"
                                   } ]
                                 } ]
                               } ],
@@ -3967,7 +3832,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "23924001",
-                                    "value" : "Eingeengtes Gefühl im Brustkorb"
+                                    "value" : "Tight chest"
                                   } ]
                                 } ]
                               } ],
@@ -4087,7 +3952,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "139394000",
-                                    "value" : "Nykturie"
+                                    "value" : "Nocturia"
                                   } ]
                                 } ]
                               } ],
@@ -4202,8 +4067,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "102572006",
-                                    "value" : "Beinödem"
+                                    "code" : "248491001",
+                                    "value" : "Swelling of knee region"
                                   } ]
                                 } ]
                               } ],
@@ -4319,7 +4184,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "80313002",
-                                    "value" : "Palpitationen"
+                                    "value" : "Palpitations"
                                   } ]
                                 } ]
                               } ],
@@ -4435,7 +4300,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "404640003",
-                                    "value" : "Schwindelgefühl"
+                                    "value" : "Dizziness"
                                   } ]
                                 } ]
                               } ],
@@ -4551,7 +4416,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "271594007",
-                                    "value" : "Synkope"
+                                    "value" : "Syncope"
                                   } ]
                                 } ]
                               } ],
@@ -4667,7 +4532,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "712831003",
-                                    "value" : "Häufige Kopfschmerzen"
+                                    "value" : "Frequent headache"
                                   } ]
                                 } ]
                               } ],
@@ -4783,7 +4648,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "249366005",
-                                    "value" : "Nasenbluten"
+                                    "value" : "Bleeding from nose"
                                   } ]
                                 } ]
                               } ],
@@ -4899,7 +4764,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "52613005",
-                                    "value" : "Übermässiges Schwitzen"
+                                    "value" : "Excessive sweating"
                                   } ]
                                 } ]
                               } ],
@@ -5015,7 +4880,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "262286000",
-                                    "value" : "Gewichtszunahme"
+                                    "value" : "Weight increased"
                                   } ]
                                 } ]
                               } ],
@@ -5131,7 +4996,7 @@
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
                                     "code" : "224960004",
-                                    "value" : "Müde"
+                                    "value" : "Tired"
                                   } ]
                                 } ]
                               } ],
@@ -5246,8 +5111,8 @@
                                   "selectedTerminologies" : [ "SNOMED-CT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SNOMED-CT",
-                                    "code" : "72863001",
-                                    "value" : "Schnarchen"
+                                    "code" : "276364001",
+                                    "value" : "Problem getting an erection"
                                   } ]
                                 } ]
                               } ],
@@ -5324,238 +5189,6 @@
                           "rmTypeName" : "ELEMENT",
                           "occurrences" : "0..0",
                           "nodeId" : "at0035.13",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0022.14",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0004.14",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "1..1",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "0..1",
-                                  "terminologyId" : {
-                                    "value" : "SNOMED-CT"
-                                  },
-                                  "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                                  "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "73430006",
-                                    "value" : "Schlafapnoe"
-                                  } ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0005.14",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.45" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0037.14",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0035.14",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..1",
-                      "nodeId" : "at0022.15",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "items",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0004.15",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "1..1",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "0..1",
-                                  "terminologyId" : {
-                                    "value" : "SNOMED-CT"
-                                  },
-                                  "constraint" : [ ],
-                                  "selectedTerminologies" : [ "SNOMED-CT" ],
-                                  "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "SNOMED-CT",
-                                    "code" : "276364001",
-                                    "value" : "Erektile Dysfunktion"
-                                  } ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0005.15",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.46" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0037.15",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DURATION",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_DATE_TIME",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "occurrences" : "0..0",
-                          "nodeId" : "at0035.15",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
@@ -5754,18 +5387,6 @@
             "text" : "(Synthesized)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.13",
-            "text" : "Für Männer: Leiden Sie unter Erektionsproblemen? (2)",
-            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.13",
-            "text" : "Für Männer: Leiden Sie unter Erektionsproblemen? (3)",
-            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
           }
         },
         "fi" : {
@@ -5924,18 +5545,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Oire / tuntemus ryhmitys (14)",
-            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Oire / tuntemus ryhmitys (15)",
-            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "nb" : {
@@ -6094,18 +5703,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spesifikt symptom/sykdomstegn (14)",
-            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Spesifikt symptom/sykdomstegn (15)",
-            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
           }
         },
         "de" : {
@@ -6117,20 +5714,20 @@
           },
           "at0022.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.2",
-            "text" : "Haben Sie manchmal ein Enge/Druckgefühl auf der Brust?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (2)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.3",
-            "text" : "Müssen Sie nachts mehr als 1x Wasser lösen?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (3)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.4" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.4",
-            "text" : "Leiden Sie unter geschwollenen Knöcheln/Beinen?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (4)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "ac0.11" : {
@@ -6141,56 +5738,56 @@
           },
           "at0022.5" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.5",
-            "text" : "Leiden Sie unter Herzrasen/aussetzendem Herzschlag?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (5)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.6" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.6",
-            "text" : "Leiden Sie unter Schwindel?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (6)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.7" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.7",
-            "text" : "Sind Sie im letzten Jahr ohnmächtig geworden?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (7)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.8" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.8",
-            "text" : "Haben Sie mehrmals im Monat Kopfschmerzen?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (8)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.9" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.9",
-            "text" : "Haben Sie mehrmals im Monat Nasenbluten?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (9)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.10" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.10",
-            "text" : "Leiden Sie unter verstärktem Schwitzen?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (10)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.11" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.11",
-            "text" : "Haben Sie in letzter Zeit Gewicht zugenommen?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (11)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.12" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.12",
-            "text" : "Fühlen sie sich im Alltag regelmässig müde und erschöpft?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (12)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "at0022.13" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.13",
-            "text" : "Schnarchen Sie nachts?",
+            "code" : "at0022.1",
+            "text" : "Spezifisches Symptom/Anzeichen (13)",
             "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           },
           "ac0.22" : {
@@ -6264,24 +5861,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Leiden Sie unter Kurzatmigkeit/Atemnot?",
-            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.14",
-            "text" : "Wurden bei Ihnen nächtliche Atemaussetzer beobachtet?",
-            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.15",
-            "text" : "Für Männer: Leiden Sie unter Erektionsproblemen?",
-            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           }
         },
         "it" : {
@@ -6440,18 +6019,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Sintomo/segno specifico (14)",
-            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Sintomo/segno specifico (15)",
-            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "sv" : {
@@ -6610,18 +6177,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Specifika symptom/tecken (14)",
-            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Specifika symptom/tecken (15)",
-            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
           }
         },
         "fr" : {
@@ -6780,18 +6335,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Symptôme/signe spécifique (14)",
-            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Symptôme/signe spécifique (15)",
-            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
           }
         },
         "zh-cn" : {
@@ -6950,18 +6493,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "具体症状/体征 (14)",
-            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "具体症状/体征 (15)",
-            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
           }
         },
         "ca" : {
@@ -7120,18 +6651,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Símptoma/signe específic (14)",
-            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Símptoma/signe específic (15)",
-            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
           }
         },
         "es" : {
@@ -7290,18 +6809,6 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.44",
             "description" : ""
-          },
-          "at0022.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Síntoma/signo específico (14)",
-            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
-          },
-          "at0022.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0022.1",
-            "text" : "Síntoma/signo específico (15)",
-            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
           }
         }
       },
@@ -7526,16 +7033,6 @@
         "ac0.44" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.44",
-          "members" : [ "at0023", "at0024" ]
-        },
-        "ac0.45" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.45",
-          "members" : [ "at0023", "at0024" ]
-        },
-        "ac0.46" : {
-          "@type" : "VALUE_SET",
-          "id" : "ac0.46",
           "members" : [ "at0023", "at0024" ]
         }
       }
@@ -8522,7 +8019,7 @@
                         "children" : [ {
                           "@type" : "C_STRING",
                           "rmTypeName" : "STRING",
-                          "constraint" : [ "Schwangerschaftskomplikation" ]
+                          "constraint" : [ "Complication of Pregnancy" ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8635,7 +8132,7 @@
                         "children" : [ {
                           "@type" : "C_STRING",
                           "rmTypeName" : "STRING",
-                          "constraint" : [ "Hohe Blutfettwerte/Cholesterin/Medikamente zur Cholesterinsenkung" ]
+                          "constraint" : [ "high blood lipids/cholesterol/taking medication to lower cholesterol" ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -9874,19 +9371,6 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -10132,20 +9616,6 @@
             "code" : "ac0.8",
             "description" : ""
           }
-        },
-        "de" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : ""
-          }
         }
       },
       "termBindings" : { },
@@ -10218,16 +9688,6 @@
         "organisation" : "Helse Nord IKT AS, Norway (openEHR Editor)",
         "email" : "june.marie.nepstad.knappskog@hnikt.no"
       },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
       "otherDetails" : { }
     } ]
   }, {
@@ -10536,7 +9996,7 @@
                                   "code_string" : "266894000",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "",
+                                "value" : "Family members treated with cholesterol-lowering medication",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
@@ -10545,7 +10005,7 @@
                                 "children" : [ {
                                   "@type" : "C_STRING",
                                   "rmTypeName" : "STRING",
-                                  "constraint" : [ "Familienmitglieder unter Behandlung mit Cholesterinsenker" ]
+                                  "constraint" : [ "Family members treated with cholesterol-lowering medication" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -15805,19 +15265,6 @@
           "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -16070,20 +15517,6 @@
             "code" : "ac0.8",
             "description" : ""
           }
-        },
-        "de" : {
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : ""
-          }
         }
       },
       "termBindings" : { },
@@ -16157,16 +15590,6 @@
         "email" : "june.marie.nepstad.knappskog@hnikt.no"
       },
       "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
@@ -16191,19 +15614,6 @@
             "codeString" : "en"
           },
           "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -16232,7 +15642,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -16413,8 +15824,7 @@
             "text" : "Denken Sie, dass Sie zu viele Medikamente einnehmen müssen?",
             "description" : ""
           }
-        },
-        "de" : { }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -16432,17 +15842,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "252f1caf-908b-4bc8-9b1f-e5713ae2058b",
@@ -17499,19 +16899,6 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -17933,32 +17320,6 @@
             "code" : "ac0.5",
             "description" : ""
           }
-        },
-        "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          }
         }
       },
       "termBindings" : { },
@@ -18003,17 +17364,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "93de4cc7-14c1-4409-88f3-e1ec47d3b10d",
@@ -18037,19 +17388,6 @@
             "codeString" : "en"
           },
           "keywords" : [ ],
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
           "originalResourceUri" : { },
           "otherDetails" : { }
         }
@@ -18688,38 +18026,6 @@
             "code" : "ac0.5",
             "description" : ""
           }
-        },
-        "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
-          "ac0.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.2",
-            "description" : ""
-          },
-          "ac0.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.3",
-            "description" : ""
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.4",
-            "description" : ""
-          },
-          "ac0.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.5",
-            "description" : ""
-          }
         }
       },
       "termBindings" : { },
@@ -18764,17 +18070,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "c463e007-6bd9-480a-b6fc-b7025cdabd63",
@@ -20468,19 +19764,6 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -20653,8 +19936,7 @@
             "text" : "Wie viele Stunden schlafen Sie von Mo-Fr pro Nacht im Durchschnitt?",
             "description" : ""
           }
-        },
-        "de" : { }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -20672,17 +19954,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "55554692-cb73-4d5c-ab8f-9ee3c267a507",
@@ -21688,19 +20960,6 @@
           "keywords" : [ ],
           "originalResourceUri" : { },
           "otherDetails" : { }
-        },
-        "de" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "de"
-          },
-          "keywords" : [ ],
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
         }
       }
     },
@@ -21809,6 +21068,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0009.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -21816,10 +21076,6 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Medikamenteneinnahme",
-                                "@type" : "DV_TEXT"
-                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21843,6 +21099,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0009.2",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -21850,10 +21107,6 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Blutdruckmessung",
-                                "@type" : "DV_TEXT"
-                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21877,6 +21130,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0009.3",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -21884,52 +21138,11 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Schlafanalyse",
-                                "@type" : "DV_TEXT"
-                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "ELEMENT",
-                          "nodeId" : "at0010.1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "at0011", "at0012" ]
-                                } ]
-                              } ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_TEXT",
-                              "attributes" : [ ],
-                              "attributeTuples" : [ ]
-                            }, {
-                              "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_BOOLEAN",
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
@@ -21948,6 +21161,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0009.4",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -21955,10 +21169,6 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Herzfrequenz und -rhythmusanalyse",
-                                "@type" : "DV_TEXT"
-                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21982,6 +21192,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0009.5",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -21989,10 +21200,6 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
-                              "defaultValue" : {
-                                "value" : "Aktivitätstracking",
-                                "@type" : "DV_TEXT"
-                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -22059,74 +21266,6 @@
             "code" : "at0008.5",
             "text" : "für ein Aktivitätstracking",
             "description" : ""
-          },
-          "at0009.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.2",
-            "text" : "Blood pressure measurement",
-            "description" : ""
-          },
-          "at0009.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.3",
-            "text" : "Sleep analysis",
-            "description" : ""
-          },
-          "at0009.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.4",
-            "text" : "Heart rate and rhytm analysis",
-            "description" : ""
-          },
-          "at0009.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.5",
-            "text" : "Activity tracking",
-            "description" : ""
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Medication management",
-            "description" : ""
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Response about use",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "at0008.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.1",
-            "text" : "zur Unterstützung bei der Medikamenteneinnahme?",
-            "description" : ""
-          },
-          "at0008.2" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.2",
-            "text" : "die Blutdruckmessung",
-            "description" : ""
-          },
-          "at0008.3" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.3",
-            "text" : "für eine Schlafanalyse",
-            "description" : ""
-          },
-          "at0008.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.4",
-            "text" : "für eine Herzfrequenz/-rhythmusanalyse",
-            "description" : ""
-          },
-          "at0008.5" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.5",
-            "text" : "für ein Aktivitätstracking",
-            "description" : ""
           }
         }
       },
@@ -22146,17 +21285,7 @@
       },
       "codeString" : "en"
     },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : { },
-      "otherDetails" : { }
-    } ]
+    "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "3e5c53d4-104f-4061-8205-1526e6e9ce13",
