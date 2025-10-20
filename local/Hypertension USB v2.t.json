@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "32.0.0",
+      "sem_ver" : "32.1.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "df47bb7d107ba7ea079f4d09e119500d",
+      "MD5-CAM-1.0.1" : "173fe41b7967e22d4f148f9a34a805a4",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -21448,6 +21448,10 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Medikamenteneinnahme",
+                                "@type" : "DV_TEXT"
+                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21478,6 +21482,10 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Blutdruckmessung",
+                                "@type" : "DV_TEXT"
+                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21508,6 +21516,10 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Schlafanalyse",
+                                "@type" : "DV_TEXT"
+                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21575,6 +21587,10 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Herzfrequenz und -rhythmusanalyse",
+                                "@type" : "DV_TEXT"
+                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
@@ -21605,6 +21621,10 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_TEXT",
+                              "defaultValue" : {
+                                "value" : "Aktivitätstracking",
+                                "@type" : "DV_TEXT"
+                              },
                               "attributes" : [ ],
                               "attributeTuples" : [ ]
                             }, {
