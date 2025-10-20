@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"149a532fd3c4e722e655ec0d4db51b62">
+		["MD5-CAM-1.0.1"] = <"705f6fa1a383a0cd2184010353d44efa">
 		["build_uid"] = <"8e0b011b-591c-38f4-9278-638aea1d2d8b">
 	>
 
@@ -135,6 +146,58 @@ ontology
 				>
 				["at0012"] = <
 					text = <"No">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Digital health questionnaire (en)">
+					description = <"*Digital health questionnaire (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Zweck des Screenings">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Beschreibung">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Benutzen digitaler Gesundheitsapplikationen?">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Spezifische Befragung">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Frage oder Nutzung">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Antwort zu Frage oder Nutzung">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*No (en)">
 					description = <"">
 				>
 			>
