@@ -34,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3a091e0832b4edc6922a7bbd3896e5b2">
+		["MD5-CAM-1.0.1"] = <"db70182517fb52e18cb06e8f30c36b75">
 		["build_uid"] = <"fe6d5808-6764-3aab-a3e7-8029e1a8acf5">
 	>
 
@@ -186,11 +186,11 @@ ontology
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*No (en)">
+					text = <"Nein">
 					description = <"">
 				>
 				["at0012"] = <
