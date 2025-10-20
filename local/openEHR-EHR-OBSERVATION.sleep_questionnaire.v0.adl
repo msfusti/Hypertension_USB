@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"57433b920128690dbe375f6d2fadcafc">
+		["MD5-CAM-1.0.1"] = <"fac80210aa62e25348066e91198c019c">
 		["build_uid"] = <"dfe5befc-ed31-3332-8e6f-38b7697f2649">
 	>
 
@@ -61,14 +72,14 @@ definition
 											DV_PROPORTION matches {*}
 										}
 									}
-									CLUSTER[at0007] occurrences matches {0..*} matches {    -- Sleep duration
+									CLUSTER[at0007] occurrences matches {0..*} matches {    -- Measure of sleep quality
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0008] occurrences matches {0..1} matches {    -- Situation
 												value matches {
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Hours a night
+											ELEMENT[at0010] occurrences matches {0..1} matches {    -- Measure
 												value matches {
 													DV_QUANTITY matches {*}
 													DV_PROPORTION matches {*}
@@ -118,7 +129,7 @@ ontology
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Sleep duration">
+					text = <"Measure of sleep quality">
 					description = <"">
 				>
 				["at0008"] = <
@@ -126,7 +137,7 @@ ontology
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"Hours a night">
+					text = <"Measure">
 					description = <"">
 				>
 				["at0011"] = <
@@ -135,6 +146,58 @@ ontology
 				>
 				["at0012"] = <
 					text = <"No">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Sleep questionnaire (en)">
+					description = <"*Sleep questionnaire (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Zweck des Screenings">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Beschreibung">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Schlaf erholsam?">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Quantifizierung der Schlafqualität">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Situation">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Messung">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*No (en)">
 					description = <"">
 				>
 			>
