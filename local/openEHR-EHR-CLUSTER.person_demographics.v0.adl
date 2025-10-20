@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"add4d543458379e58aaabb64efb0b6a3">
+		["MD5-CAM-1.0.1"] = <"cb4a581a79189d10db1dbc8d3fac2baa">
 		["build_uid"] = <"1114f21d-e64b-3dfb-a8ed-5d5de0a6fc4a">
 	>
 
@@ -276,23 +276,23 @@ ontology
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"*Married (en)">
+					text = <"Verheiratet">
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"*Single (en)">
+					text = <"Ledig">
 					description = <"">
 				>
 				["at0009"] = <
-					text = <"*Divorced (en)">
+					text = <"Geschieden">
 					description = <"">
 				>
 				["at0010"] = <
-					text = <"*Widowed (en)">
+					text = <"Verwittwet">
 					description = <"">
 				>
 				["at0011"] = <
-					text = <"*Register partnership (en)">
+					text = <"Eingetragene Partnerschaft">
 					description = <"">
 				>
 				["at0012"] = <
@@ -300,11 +300,11 @@ ontology
 					description = <"">
 				>
 				["at0013"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0014"] = <
-					text = <"*No (en)">
+					text = <"Nein">
 					description = <"">
 				>
 				["at0015"] = <
@@ -316,11 +316,11 @@ ontology
 					description = <"">
 				>
 				["at0017"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0018"] = <
-					text = <"*No (en)">
+					text = <"Nein">
 					description = <"">
 				>
 				["at0019"] = <
@@ -328,11 +328,11 @@ ontology
 					description = <"">
 				>
 				["at0020"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0021"] = <
-					text = <"*No (en)">
+					text = <"Nein">
 					description = <"">
 				>
 				["at0022"] = <
