@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ea4eac59dda487bd1d4fff26eed3b3a0">
+		["MD5-CAM-1.0.1"] = <"8bd4d7fc3b40e3007ff42cb6d7d7862c">
 		["build_uid"] = <"eba69089-b447-32ea-8039-d871a36920cb">
 	>
 
@@ -133,6 +144,62 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Unsure">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Therapieadhärenz">
+					description = <"*medication compliance questionnaire (en)">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Zweck des Screenings">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Beschreibung">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Spezifische Frage">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Frage">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Vorhanden?">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"*Unsure (en)">
 					description = <"">
 				>
 			>
