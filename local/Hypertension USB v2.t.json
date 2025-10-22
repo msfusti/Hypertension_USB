@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "36.0.0",
+      "sem_ver" : "37.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "fd6b9445a4d948bf3222fc6f23349d00",
+      "MD5-CAM-1.0.1" : "edaab279ba67e26815ccfabf9b4f0a4c",
       "PARENT:MD5-CAM-1.0.1" : "2495EE8B883231F9557FFA53672E038A"
     },
     "details" : {
@@ -18847,8 +18847,7 @@
                             "rmAttributeName" : "value",
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
-                              "rmTypeName" : "DV_CODED_TEXT",
-                              "occurrences" : "1..1",
+                              "rmTypeName" : "DV_TEXT",
                               "defaultValue" : {
                                 "defining_code" : {
                                   "terminology_id" : {
@@ -18858,28 +18857,10 @@
                                   "code_string" : "39953003",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Tobacco",
+                                "value" : "",
                                 "@type" : "DV_CODED_TEXT"
                               },
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "0..1",
-                                  "terminologyId" : {
-                                    "value" : "local_terms_3"
-                                  },
-                                  "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms_3" ],
-                                  "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms_3",
-                                    "code" : "39953003",
-                                    "value" : "Tobacco"
-                                  } ]
-                                } ]
-                              } ],
+                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
