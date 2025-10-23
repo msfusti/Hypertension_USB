@@ -6,16 +6,27 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
+		["date"] = <"2025-10-10">
 		["name"] = <"Sol Fustiñana">
 		["organisation"] = <"University Hospital Basel (USB)">
 		["email"] = <"msfusti@gmail.com">
-		["date"] = <"2025-10-10">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -26,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"849640dacfc92b45f0e580779ff73d61">
+		["MD5-CAM-1.0.1"] = <"cb4a581a79189d10db1dbc8d3fac2baa">
 		["build_uid"] = <"1114f21d-e64b-3dfb-a8ed-5d5de0a6fc4a">
 	>
 
@@ -230,6 +241,110 @@ ontology
 				>
 				["at0024"] = <
 					text = <"General practitioner">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Person Demographics (en)">
+					description = <"*Person Demographics (en)">
+				>
+				["at0001"] = <
+					text = <"Vorname">
+					description = <"*The name of a person (en)">
+				>
+				["at0002"] = <
+					text = <"Nachname">
+					description = <"*The surname of a person (en)">
+				>
+				["at0003"] = <
+					text = <"Geburtsdatum">
+					description = <"*Date of birth of a person (en)">
+				>
+				["at0004"] = <
+					text = <"Nationalität">
+					description = <"*Nationality of a person (en)">
+				>
+				["at0005"] = <
+					text = <"Muttersprache">
+					description = <"*Mother tong of a person (en)">
+				>
+				["at0006"] = <
+					text = <"Zivilstand">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Verheiratet">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Ledig">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Geschieden">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Verwittwet">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Eingetragene Partnerschaft">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Kinder">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Anzahl Kinder">
+					description = <"">
+				>
+				["at0016"] = <
+					text = <"Aktuell berufstätig">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Zuvor berufstätig">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Ja">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Nein">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Berufliche Tätigkeit">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Zuweisender Arzt">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Hausarzt">
 					description = <"">
 				>
 			>
