@@ -322,7 +322,7 @@ No s'ha d'utilitzar per registrar detalls sobre una llista de selecció simple o
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3dba347ef259cca571fc5268ed434247">
+		["MD5-CAM-1.0.1"] = <"49aa342b24171969fb7cf9964d81db2d">
 		["build_uid"] = <"abca21d3-cc51-4e81-aada-e302d958a4a2">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 		["revision"] = <"1.0.7">
@@ -401,14 +401,39 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0037] occurrences matches {0..*} matches {    -- Typical amount per time period
+											ELEMENT[at0052] occurrences matches {0..1} matches {    -- Measure kind
 												value matches {
-													DV_DURATION matches {*}
-													DV_INTERVAL<DV_DURATION> matches {*}
-													DV_INTERVAL<DV_DATE_TIME> matches {*}
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0053,    -- Distance
+															at0054,    -- Steps
+															at0055,    -- Sessions
+															at0057]    -- Time
+														}
+													}
 													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0056] occurrences matches {0..1} matches {    -- Amount
+												value matches {
+													DV_QUANTITY matches {*}
 													DV_COUNT matches {*}
-													DV_ORDINAL matches {*}
+													DV_DURATION matches {*}
+													DV_TIME matches {*}
+												}
+											}
+											ELEMENT[at0058] occurrences matches {0..1} matches {    -- Reference period
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0059,    -- Day
+															at0060,    -- Week
+															at0061,    -- Month
+															at0062]    -- Year
+														}
+													}
 												}
 											}
 											allow_archetype CLUSTER[at0026] occurrences matches {0..*} matches {    -- Additional details
@@ -520,11 +545,6 @@ For example: 'pre-admission screening' or the name of the actual questionnaire."
 					text = <"Description">
 					description = <"Narrative description about the history of any symptoms or signs relevant for the screening purpose.">
 				>
-				["at0037"] = <
-					text = <"Typical amount per time period">
-					description = <"Indication of timing related to the specific symptom or sign.">
-					comment = <"The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the specific symptom or sign occured. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for when the specific symptom or sign; the interval of time during which the specific symptom or sign occured; the duration of the specific symptom or sign; the age of the individual at the time of the specific symptom or sign occured; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year.">
-				>
 				["at0039"] = <
 					text = <"Additional details">
 					description = <"Structured details or questions about screening for symptoms or signs.">
@@ -559,6 +579,51 @@ For example: 'pre-admission screening' or the name of the actual questionnaire."
 				>
 				["at0050"] = <
 					text = <"Vigorous">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Measure kind">
+					description = <"What is being counted?">
+					comment = <"For example the distance or the number of steps">
+				>
+				["at0053"] = <
+					text = <"Distance">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Steps">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Sessions">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Amount">
+					description = <"The amount">
+				>
+				["at0057"] = <
+					text = <"Time">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Reference period">
+					description = <"The reference period">
+				>
+				["at0059"] = <
+					text = <"Day">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Week">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Month">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Year">
 					description = <"">
 				>
 			>
@@ -638,11 +703,6 @@ For example: 'pre-admission screening' or the name of the actual questionnaire."
 					text = <"*Additional details (en)">
 					description = <"*Structured details or questions about screening for symptoms or signs. (en)">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"*Indication of timing related to the specific symptom or sign. (en)">
-					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the specific symptom or sign occured. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for when the specific symptom or sign; the interval of time during which the specific symptom or sign occured; the duration of the specific symptom or sign; the age of the individual at the time of the specific symptom or sign occured; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
-				>
 				["at0043"] = <
 					text = <"*Number of hours per time period sitting (en)">
 					description = <"">
@@ -673,6 +733,51 @@ For example: 'pre-admission screening' or the name of the actual questionnaire."
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -749,11 +854,6 @@ For eksempel: \"Pre operativ screening\" eller navnet på det faktiske spørresk
 					text = <"Beskrivelse">
 					description = <"Fritekstbeskrivelse om symptomer eller sykdomstegn som er innenfor kartleggingsformålet.">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"Tidsangivelse for symptomet eller sykdomstegnet.">
-					comment = <"Dataelementet \"Tidsangivelse\" er med hensikt løst modellert for å støtte ulike måter å angi tidsangivelser for symptomet eller sykdomstegnet i et spørreskjema. Den konkrete semantikken defineres i templatet. For eksempel: Symptomet eller sykdomstegnet faktiske dato og/eller klokkeslett, start- og sluttid for symptomet eller sykdomstegnet, et tidsintervall for når for symptomet eller sykdomstegnet oppstod, varigheten for symptomet eller sykdomstegnet, individets alder på tidspunktet symptomet eller sykdomstegnet oppstod, eller hvor lenge det siden det oppstod. Kan være en deldato, for eksempel bare år, ved å bruke datatypen DV_DATE_TIME.">
-				>
 				["at0039"] = <
 					text = <"Ytterligere detaljer">
 					description = <"Strukturerte detaljer eller spørsmål om kartleggingen av problemer eller diagnoser.">
@@ -788,6 +888,51 @@ For eksempel: \"Pre operativ screening\" eller navnet på det faktiske spørresk
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -864,12 +1009,6 @@ Zum Beispiel: \"Screening vor der Aufnahme\" oder der Name des eigentlichen Frag
 					text = <"Beschreibung">
 					description = <"Beschreibung über die Geschichte der Symptome oder Anzeichen, die für das Screening relevant sind.">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"Angabe des Zeitpunkts im Zusammenhang mit dem spezifischen Symptom oder Zeichen.
-">
-					comment = <"Das Datenelement „Zeitpunkt“ wurde bewusst locker modelliert, um die unzähligen Möglichkeiten zu unterstützen, wie es in Fragebögen verwendet werden kann, um zu erfassen, wann das spezifische Symptom oder Zeichen aufgetreten ist. Die spezifische und beabsichtigte Semantik kann in einem Template weiter verdeutlicht werden. Zum Beispiel: das tatsächliche Datum und/oder die tatsächliche Uhrzeit; die Start- und Stoppzeit für das Auftreten eines bestimmten Symptoms oder Zeichens; der Zeitraum, in dem das spezifische Symptom oder Zeichen auftrat; die Dauer des spezifischen Symptoms oder Anzeichens; das Alter der Person zum Zeitpunkt des Auftretens des spezifischen Symptoms oder Anzeichens; oder die Zeitspanne, seit es aufgetreten ist. Bei Verwendung des Datentyps DV_DATE_TIME ist ein Teildatum gültig, um nur ein Jahr aufzuzeichnen.">
-				>
 				["at0039"] = <
 					text = <"Zusätzliche Angaben">
 					description = <"Strukturierte Angaben oder Fragen zum Screening von Symptomen/Anzeichen.">
@@ -904,6 +1043,51 @@ Zum Beispiel: \"Screening vor der Aufnahme\" oder der Name des eigentlichen Frag
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -983,11 +1167,6 @@ Zum Beispiel: \"Screening vor der Aufnahme\" oder der Name des eigentlichen Frag
 					text = <"*Additional details (en)">
 					description = <"*Structured details or questions about screening for symptoms or signs. (en)">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"*Indication of timing related to the specific symptom or sign. (en)">
-					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the specific symptom or sign occured. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for when the specific symptom or sign; the interval of time during which the specific symptom or sign occured; the duration of the specific symptom or sign; the age of the individual at the time of the specific symptom or sign occured; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
-				>
 				["at0043"] = <
 					text = <"*Number of hours per time period sitting (en)">
 					description = <"">
@@ -1018,6 +1197,51 @@ Zum Beispiel: \"Screening vor der Aufnahme\" oder der Name des eigentlichen Frag
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -1097,11 +1321,6 @@ Exempel: \"screening inför inskrivning\" eller namnet på själva frågeformul�
 					text = <"Beskrivning">
 					description = <"Beskrivning om alla symptom eller andra tecken relevanta för screeningändamålet">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"*Indication of timing related to the specific symptom or sign. (en)">
-					comment = <"*The 'Timing' data element has deliberately been loosely modelled to support the myriad of ways that it can be used in questionnaires to capture when the specific symptom or sign occured. The specific and intended semantics can be further clarified in a template. For example: the actual date and/or time; the start and stop time for when the specific symptom or sign; the interval of time during which the specific symptom or sign occured; the duration of the specific symptom or sign; the age of the individual at the time of the specific symptom or sign occured; or the duration of time since it occurred. A partial date is valid, using the DV_DATE_TIME data type, to record only a year. (en)">
-				>
 				["at0039"] = <
 					text = <"Screening-detaljer eller frågor">
 					description = <"Strukturerade detaljer eller frågor relaterade till screening av symptom och tecken">
@@ -1136,6 +1355,51 @@ Exempel: \"screening inför inskrivning\" eller namnet på själva frågeformul�
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -1212,11 +1476,6 @@ Par exemple : « dépistage avant l'admission » ou le nom du questionnaire prop
 					text = <"Description">
 					description = <"Description narrative des antécédents de tout symptôme ou signe pertinent pour le dépistage.">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"Indication de la chronologie liée au symptôme ou au signe spécifique.">
-					comment = <"L'élément d'information « Timing » a été délibérément modélisé de manière souple afin de prendre en charge la myriade de façons dont il peut être utilisé dans les questionnaires pour saisir le moment où le symptôme ou le signe spécifique s'est manifesté. La sémantique spécifique et prévue peut être précisée dans un modèle. Par exemple : la date et/ou l'heure réelle ; l'heure de début et de fin du symptôme ou du signe spécifique ; l'intervalle de temps pendant lequel le symptôme ou le signe spécifique est apparu ; la durée du symptôme ou du signe spécifique ; l'âge de la personne au moment de l'apparition du symptôme ou du signe spécifique ; ou la durée écoulée depuis l'apparition du symptôme ou du signe. Une date partielle est valable, en utilisant le type de données DV_DATE_TIME, pour enregistrer seulement une année.">
-				>
 				["at0039"] = <
 					text = <"Détails supplémentaires">
 					description = <"Détails ou questions structurées sur le dépistage des symptômes ou des signes.">
@@ -1251,6 +1510,51 @@ Par exemple : « dépistage avant l'admission » ou le nom du questionnaire prop
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -1327,11 +1631,6 @@ Par exemple : « dépistage avant l'admission » ou le nom du questionnaire prop
 					text = <"描述">
 					description = <"关于与筛选目的相关的任何症状或体征的病史的叙述性描述。">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"表明与特定症状或体征相关的时间特征。">
-					comment = <"时间特征数据元“Timing”有意被特意进行了松散的建模，以便能够支持在问卷当中利用它来采集症状或体征发生时间的无数种方式。可以在模板当中进一步澄清具体的预定语义。例如：实际的日期和/或时间、特定症状或体征的开始和停止时间、特定症状或体征出现的时间区间；特定症状或体征的持续时长、出现特定症状或体征时的个人年龄，或者是自发生特定症状或体征以来的持续时长。可以利用日期时间型数据类型 DV_DATE_TIME ，采用部分型/并不完整的日期来合法有效地仅仅记录年份。">
-				>
 				["at0039"] = <
 					text = <"其他详情">
 					description = <"关于症状或体征筛查的结构化详情或问题。">
@@ -1366,6 +1665,51 @@ Par exemple : « dépistage avant l'admission » ou le nom du questionnaire prop
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -1441,11 +1785,6 @@ Par exemple : « dépistage avant l'admission » ou le nom du questionnaire prop
 					text = <"Descripció">
 					description = <"Descripció narrativa sobre l'historial de qualsevol símptoma o signe rellevant per al propòsit del cribratge.">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"Indicació del moment relacionat amb el símptoma o signe específic.">
-					comment = <"L'element de dades \"Temps\" s'ha modelat deliberadament de manera flexible per admetre la infinitat de maneres en què es pot utilitzar en qüestionaris per capturar quan es va produir el símptoma o signe específic. La semàntica específica i prevista es pot aclarir més en una plantilla. Per exemple: la data i/o hora reals; l'hora d'inici i de finalització del símptoma o signe específic; l'interval de temps durant el qual es va produir el símptoma o signe específic; la durada del símptoma o signe específic; l'edat de l'individu en el moment en què es va produir el símptoma o signe específic; o el temps transcorregut des que es va produir. Una data parcial és vàlida, utilitzant el tipus de dades DV_DATE_TIME, per registrar només un any.">
-				>
 				["at0039"] = <
 					text = <"Detalls addicionals">
 					description = <"Detalls o preguntes estructurades sobre el cribratge de símptomes o signes.">
@@ -1480,6 +1819,51 @@ Par exemple : « dépistage avant l'admission » ou le nom du questionnaire prop
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
@@ -1556,11 +1940,6 @@ Por ejemplo: \"cribado previo al ingreso\" o el nombre del cuestionario.">
 					text = <"Descripción">
 					description = <"Descripción sobre el historial de cualquier síntoma o signo relevante para la evaluación.">
 				>
-				["at0037"] = <
-					text = <"*Typical amount per time period (en)">
-					description = <"Indicación del tiempo relacionado con el síntoma o signo específico.">
-					comment = <"El elemento de datos \"Tiempo\" se ha modelado deliberadamente de forma flexible para facilitar su uso en cuestionarios, que permite registrar la fecha de aparición del síntoma o signo específico. La semántica específica y prevista se puede aclarar con más detalle en una plantilla. Por ejemplo: la fecha y/o hora real; la hora de inicio y fin del síntoma o signo específico; el intervalo de tiempo durante el cual se produjo el síntoma o signo específico; la duración del síntoma o signo específico; la edad de la persona en el momento de la aparición del síntoma o signo específico; o el tiempo transcurrido desde su aparición. Una fecha parcial es válida, utilizando el tipo de dato DV_DATE_TIME, para registrar solo un año.">
-				>
 				["at0039"] = <
 					text = <"Detalles adicionales">
 					description = <"Detalles estructurados o preguntas sobre la detección de síntomas o signos.">
@@ -1595,6 +1974,51 @@ Por ejemplo: \"cribado previo al ingreso\" o el nombre del cuestionario.">
 				>
 				["at0050"] = <
 					text = <"*Vigorous (en)">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"*Measure kind (en)">
+					description = <"*What is being counted? (en)">
+					comment = <"*For example the distance or the number of steps (en)">
+				>
+				["at0053"] = <
+					text = <"*Distance (en)">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"*Steps (en)">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"*Sessions (en)">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"*Amount (en)">
+					description = <"*The amount (en)">
+				>
+				["at0057"] = <
+					text = <"*Time (en)">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"*Reference period (en)">
+					description = <"*The reference period (en)">
+				>
+				["at0059"] = <
+					text = <"*Day (en)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"*Week (en)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"*Month (en)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"*Year (en)">
 					description = <"">
 				>
 			>
